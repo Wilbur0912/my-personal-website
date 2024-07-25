@@ -1,5 +1,7 @@
 .carousel-container {
     margin-bottom: 0px; /* 为了与描述区分开 */
+    margin-left: 30px;
+    margin-right: 30px;
 }
 
 .owl-carousel .item {

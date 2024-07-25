@@ -1,3 +1,13 @@
+.container {
+    margin-top: 70px;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
 .portfolio-item {
     display: flex;
     align-items: center;

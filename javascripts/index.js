@@ -2,8 +2,8 @@ $(document).ready(function(){
     $('.owl-carousel').owlCarousel({
         loop: true,
         margin: 10,
-        nav: false,  // 移除左右箭頭
-        dots: true,  // 啟用指示器
+        nav: false,
+        dots: true,
         autoplay: true,
         autoplayTimeout: 3000,
         responsive:{
@@ -17,14 +17,5 @@ $(document).ready(function(){
                 items: 4
             }
         }
-    });
-});
-
-document.addEventListener("DOMContentLoaded", function() {
-    const menuToggle = document.getElementById('mobile-menu');
-    const nav = document.querySelector('nav ul');
-
-    menuToggle.addEventListener('click', function() {
-        nav.classList.toggle('active');
     });
 });

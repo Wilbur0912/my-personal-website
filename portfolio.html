@@ -23,7 +23,7 @@
 
     <div class="container">
         <h1 class="roboto-bold">Portfolio</h1>
-        <div class="portfolio-item" id="project1">
+        <div class="portfolio-item" data-detail="detail1">
             <div class="portfolio-img">
                 <img src="images/carousel/cushion.png" alt="XGboost cushion">
             </div>
@@ -32,13 +32,13 @@
                 <p class="roboto-regular">Detecting different kinds of poor sitting posture by analyzing force data sampled from 9 Force Sensing Resistors (FSR406) on the seat cushion with the XGboost model and providing users with real-time posture correction advice. It aims to promote better spinal alignment, leading to reduced musculoskeletal strain.</p>
             </div>
         </div>
-        <div class="portfolio-item" id="project1">
+        <div class="portfolio-item" data-detail="detail2">
             <div class="portfolio-img">
-                <img src="images/carousel/cushion.png" alt="XGboost cushion">
+                <img src="images/carousel/image1.jfif" alt="Project Image">
             </div>
             <div class="portfolio-summary">
-                <h2 class="roboto-medium">XGboost-based Sitting Posture Correction Cushion</h2>
-                <p class="roboto-regular">Detecting different kinds of poor sitting posture by analyzing force data sampled from 9 Force Sensing Resistors (FSR406) on the seat cushion with the XGboost model and providing users with real-time posture correction advice. It aims to promote better spinal alignment, leading to reduced musculoskeletal strain.</p>
+                <h2 class="roboto-medium">Cardiac Left Bundle Branch Block Detection System</h2>
+                <p class="roboto-regular">Utilizing a 34-layer ResNet CNN, we detect cardiac left bundle branch blocks by analyzing V1-lead ECG data sampled from clothing. This approach enables early detection of cardiac abnormalities, facilitating timely medical intervention and ultimately improving patient outcomes in the field of cardiology.</p>
             </div>
         </div>
     </div>
@@ -46,10 +46,20 @@
     <!-- Project Detail Section -->
     <div class="project-detail" id="detail1">
         <div class="detail-content">
-            <span class="close-button" id="close1">&times;</span>
+            <span class="close-button" data-close="detail1">&times;</span>
             <h2 class="roboto-medium">XGboost-based Sitting Posture Correction Cushion</h2>
             <p class="roboto-regular">
                 Detecting different kinds of poor sitting posture by analyzing force data sampled from 9 Force Sensing Resistors (FSR406) on the seat cushion with the XGboost model and providing users with real-time posture correction advice. It aims to promote better spinal alignment, leading to reduced musculoskeletal strain.
+            </p>
+        </div>
+    </div>
+
+    <div class="project-detail" id="detail2">
+        <div class="detail-content">
+            <span class="close-button" data-close="detail2">&times;</span>
+            <h2 class="roboto-medium">Cardiac Left Bundle Branch Block Detection System</h2>
+            <p class="roboto-regular">
+                Utilizing a 34-layer ResNet CNN, we detect cardiac left bundle branch blocks by analyzing V1-lead ECG data sampled from clothing. This approach enables early detection of cardiac abnormalities, facilitating timely medical intervention and ultimately improving patient outcomes in the field of cardiology.
             </p>
         </div>
     </div>
@@ -58,6 +68,6 @@
         <p class="roboto-regular">&copy; 2024 Wilbur Wang. All rights reserved.</p>
     </footer>
 
-    <script src="scripts.js"></script>
+    <script src="javascripts/scripts.js"></script>
 </body>
 </html>
