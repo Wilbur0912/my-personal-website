@@ -20,6 +20,13 @@ header {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
 nav ul {
     list-style: none;
     padding: 0;
@@ -44,6 +51,20 @@ nav ul li a {
 nav ul li a:hover {
     background-color: #555;
     border-radius: 4px;
+}
+
+.menu-toggle {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.menu-toggle .bar {
+    height: 3px;
+    width: 25px;
+    background-color: #fff;
+    margin: 4px 0;
+    transition: all 0.3s ease;
 }
 
 .container {
@@ -108,11 +129,11 @@ table {
 }
 
 #desktop_profile_pics {
-    padding: 10px;
+    padding-left: 30px;
 }
 
 #introTable {
-    padding-left: 20px;
+    padding-left: 0px;
 }
 
 #mobile_profile_pics {
@@ -120,9 +141,29 @@ table {
 }
 
 @media screen and (max-width: 768px) {
+    .menu-toggle {
+        display: flex;
+    }
+    
+    nav ul {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+    }
+    
+    nav ul.showing {
+        display: flex;
+    }
+    
+    nav ul li {
+        margin: 15px 0;
+    }
+    
     #desktop_profile_pics {
         display: none;
     }
+    
     #mobile_profile_pics {
         display: block;
     }
