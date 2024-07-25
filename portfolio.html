@@ -3,9 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Personal Website - Portfolio</title>
-    <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/portfolio.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
@@ -19,23 +20,44 @@
             </ul>
         </nav>
     </header>
-    <section id="portfolio">
-        <div class="container">
-            <h2>My Portfolio</h2>
-            <div class="portfolio-item">
-                <h3>Project 1</h3>
-                <p>Description of Project 1</p>
+
+    <div class="container">
+        <h1 class="roboto-bold">Portfolio</h1>
+        <div class="portfolio-item" id="project1">
+            <div class="portfolio-img">
+                <img src="images/carousel/cushion.png" alt="XGboost cushion">
             </div>
-            <div class="portfolio-item">
-                <h3>Project 2</h3>
-                <p>Description of Project 2</p>
+            <div class="portfolio-summary">
+                <h2 class="roboto-medium">XGboost-based Sitting Posture Correction Cushion</h2>
+                <p class="roboto-regular">Detecting different kinds of poor sitting posture by analyzing force data sampled from 9 Force Sensing Resistors (FSR406) on the seat cushion with the XGboost model and providing users with real-time posture correction advice. It aims to promote better spinal alignment, leading to reduced musculoskeletal strain.</p>
             </div>
-            <!-- Add more projects as needed -->
         </div>
-    </section>
+        <div class="portfolio-item" id="project1">
+            <div class="portfolio-img">
+                <img src="images/carousel/cushion.png" alt="XGboost cushion">
+            </div>
+            <div class="portfolio-summary">
+                <h2 class="roboto-medium">XGboost-based Sitting Posture Correction Cushion</h2>
+                <p class="roboto-regular">Detecting different kinds of poor sitting posture by analyzing force data sampled from 9 Force Sensing Resistors (FSR406) on the seat cushion with the XGboost model and providing users with real-time posture correction advice. It aims to promote better spinal alignment, leading to reduced musculoskeletal strain.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Project Detail Section -->
+    <div class="project-detail" id="detail1">
+        <div class="detail-content">
+            <span class="close-button" id="close1">&times;</span>
+            <h2 class="roboto-medium">XGboost-based Sitting Posture Correction Cushion</h2>
+            <p class="roboto-regular">
+                Detecting different kinds of poor sitting posture by analyzing force data sampled from 9 Force Sensing Resistors (FSR406) on the seat cushion with the XGboost model and providing users with real-time posture correction advice. It aims to promote better spinal alignment, leading to reduced musculoskeletal strain.
+            </p>
+        </div>
+    </div>
+
     <footer>
-        <p>&copy; 2024 Your Name. All rights reserved.</p>
+        <p class="roboto-regular">&copy; 2024 Wilbur Wang. All rights reserved.</p>
     </footer>
+
     <script src="scripts.js"></script>
 </body>
 </html>

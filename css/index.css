@@ -1,0 +1,25 @@
+.carousel-container {
+    margin-bottom: 0px; /* 为了与描述区分开 */
+}
+
+.owl-carousel .item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 170px;
+    background: none; /* 去掉背景色 */
+    margin: 2px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.owl-carousel .item img {
+    width: 100%;
+    height: auto;
+    transition: transform 0.5s ease;
+}
+
+.owl-carousel .item:hover img {
+    transform: scale(1.05);
+}
